@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking System Project Brief</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #005baa;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    code {
+      background: #eee;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Booking System Development Brief</h1>
+  <p><b>Platform:</b> WordPress (self-hosted)</p>
+  <p><b>Stack:</b> Bookly Pro + Add-ons + WPML or TranslatePress</p>
+  <p><b>Timeline:</b> 7–10 business days</p>
+
+  <h2>Core Functional Requirements</h2>
+  <ul>
+    <li>Hundreds of bookable services (each with its own name, duration, price, and assigned Google Calendar)</li>
+    <li>Real-time availability pulled from corresponding Google Calendars (100+ total)</li>
+    <li>Each booking creates a calendar event and prevents double-booking</li>
+    <li>Booking without login (guest checkout)</li>
+    <li>Multi-service booking (cart functionality) with full or partial payment per service</li>
+    <li>Email notifications sent to the relevant service provider and customer</li>
+    <li>Admin should be able to manage services (create/edit/delete), with each service linked to its own Google Calendar and notification email</li>
+    <li>Admin dashboard with filters, stats, CSV/PDF export</li>
+  </ul>
+
+  <h2>Payment Integration</h2>
+  <ul>
+    <li>Support for one of the following gateways: Square, Stripe, Adyen, or Mollie</li>
+    <li>Multi-currency support (USD, EUR, GBP, JPY, KRW, TWD etc.)</li>
+    <li>Currency pre-selected by browser language/location; manual switch optional</li>
+  </ul>
+
+  <h2>Language Support</h2>
+  <ul>
+    <li>Frontend supports at least 4-6 languages (e.g. English, Spanish, French, Japanese, Korean, Chinese)</li>
+    <li>Booking forms, service descriptions, and notifications must be translatable</li>
+    <li>Confirmation emails sent in the language selected at booking</li>
+    <li>Frontend language switcher required</li>
+  </ul>
+
+  <h2>Tech Stack Notes</h2>
+  <ul>
+    <li>Use WPML or TranslatePress for multilingual setup</li>
+    <li>Use WooCommerce if needed for advanced cart or payment logic</li>
+    <li>Developer should handle plugin setup, SSL, calendar API integration, and notification rules</li>
+  </ul>
+
+  <h2>What Client Will Provide</h2>
+  <ul>
+    <li>Service catalog with details and calendar assignment</li>
+    <li>Domain, hosting, and translation files</li>
+  </ul>
+
+  <h2>Deliverables</h2>
+  <ul>
+    <li>Fully functional multilingual booking site (WordPress)</li>
+    <li>Each service linked to its own Google Calendar</li>
+    <li>Real-time availability & automatic event creation</li>
+    <li>Frontend booking form with multi-service checkout</li>
+    <li>Email logic and admin dashboard</li>
+    <li>Payment setup (1 selected gateway)</li>
+    <li>Multi-language support with email localization</li>
+  </ul>
+
+  <p><b>Note:</b> This is not a plugin development project. The solution should be built using existing tools with expert-level configuration, and must not rely on any third-party services requiring recurring subscription fees.</p>
+
+</body>
+
+</html>
